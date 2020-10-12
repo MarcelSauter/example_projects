@@ -1,0 +1,19 @@
+FROM openjdk:13-jdk-buster as base
+WORKDIR /build
+
+FROM base as maven
+RUN apt-get update \
+    && apt-get install -y \
+        maven \
+    && rm -rf /var/lib/apt/lists/*
+
+FROM maven as build
+COPY pom.xml ./
+COPY src ./
+COPY . .
+RUN mvn -D skipTests install
+
+FROM openjdk:13-alpine
+RUN apk add ttf-dejavu
+COPY --from=build /build/target/proQrentGold*.jar /app.jar
+ENTRYPOINT ["java", "-jar", "/app.jar"]

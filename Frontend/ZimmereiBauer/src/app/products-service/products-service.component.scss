@@ -1,0 +1,34 @@
+.products-container {
+  margin-top: 100px;
+
+  &-video {
+    min-height: 570px;
+    padding: 0;
+
+    &--width {
+      min-height: 570px;
+      padding: 0;
+      width: 100%;
+    }
+
+    .image-button {
+      background-color: rgba(0, 0, 0, .3);
+      border: 1px solid black;
+      bottom: calc(50% - (50px / 2));
+      color: black;
+      left: calc(50% - (200px / 2));
+      position: absolute;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, .8);
+        color: #DCDCDC;
+      }
+    }
+  }
+
+  &-list {
+    li {
+      margin: 30px 0;
+    }
+  }
+}

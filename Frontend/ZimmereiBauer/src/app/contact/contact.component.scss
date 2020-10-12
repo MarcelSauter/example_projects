@@ -1,0 +1,34 @@
+iframe {
+  width: 100%;
+  height: 500px;
+}
+
+.contact-form-container {
+  input {
+    background: none;
+    border: 1px solid #b7bdbe;
+    height: 30px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  textarea {
+    background: none;
+    border: 1px solid #b7bdbe;
+    margin-top: 20px;
+    height: 380px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .image-button {
+    bottom: 0;
+    border: 1px solid #b7bdbe;
+    color: black;
+    float: right;
+    height: 40px;
+    margin-right: 15px;
+    position: absolute;
+    right: 0;
+  }
+}

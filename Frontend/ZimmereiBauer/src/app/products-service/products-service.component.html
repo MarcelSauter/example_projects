@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
+<div class="container-fluid">
+  <h1>Produkte / Leistungen</h1>
+  <div class="row products-container">
+    <div class="col-lg-6 col-md-12 products-container-video">
+      <video autoplay muted loop class="products-container-video--width">
+        <source src="../../assets/about-us/products.mp4" type="video/mp4">
+      </video>
+      <button class="image-button" [routerLink]="['/contact']">Kontakt</button>
+    </div>
+    <div class="col-lg-6 col-md-12 products-container-list">
+      <h3>Unsere Produkte</h3>
+      <ul>
+        <li>Carports</li>
+        <li>Vordächer</li>
+        <li>Pergoglas</li>
+        <li>Balkone und Terassenbeläge</li>
+        <li>Fassadenschalungen</li>
+        <li>Holzhäuser in Holzständerbauweise / Holzrahmenbau</li>
+        <li>Gauben</li>
+        <li>Dachsanierung und -Neubau / Dächer</li>
+      </ul>
+    </div>
+  </div>
+</div>

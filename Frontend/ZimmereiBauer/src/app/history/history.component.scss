@@ -1,0 +1,63 @@
+.milestone-container {
+  &-image {
+    background-size: cover;
+    height: 500px;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+
+    h3 {
+      color: #b7bdbe;
+      font-weight: 600;
+      margin-top: 200px;
+      transition: .5s ease-in-out;
+    }
+
+    p {
+      background-color: rgba(0, 0, 0, .4);
+      bottom: -100px;
+      color: #b7bdbe;
+      font-weight: 400;
+      left: 0;
+      min-width: 100%;
+      padding: 10px;
+      position: absolute;
+      transition: .5s ease-in-out;
+    }
+
+    &:hover {
+      h3 {
+        color: black;
+        margin-top: 170px;
+        transform: scale(1.05);
+      }
+      p {
+        bottom: 200px;
+      }
+    }
+
+    &-founded {
+      background-image: url("../../assets/history/founded.png");
+    }
+
+    &-march-1995 {
+      background-image: url("../../assets/history/march1995.png");
+    }
+
+    &-february-1996 {
+      background-image: url("../../assets/history/february1996.png");
+    }
+
+    &-january-1997 {
+      background-image: url("../../assets/history/january1997.png");
+    }
+
+    &-july-1997 {
+      background-image: url("../../assets/history/july1997.png");
+    }
+
+    &-today {
+      background-image: url("../../assets/history/today.png");
+    }
+  }
+}

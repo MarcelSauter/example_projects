@@ -1,0 +1,7 @@
+version: "3"
+services:
+  uebungsprojekt-fe:
+    container_name: frontendue
+    build:
+      context: .
+      dockerfile: Dockerfile.uebungsprojekt-frontend
